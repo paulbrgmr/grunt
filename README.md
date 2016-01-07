@@ -12,3 +12,8 @@ Execute grunt watcher
 ```
 grunt watch
 ```
+
+Quick clone
+```
+https://github.com/paulbrgmr/grunt.git
+```
