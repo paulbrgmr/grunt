@@ -4,7 +4,7 @@ var scssDestPath = srcPath + 'css/';
 var cssSrcPath = scssDestPath;
 var cssDestPath = cssSrcPath;
 var jsSrcPath = srcPath + 'js/';
-var jsDestPath = jsSrcPath;
+var jsDestPath = jsSrcPath + 'min/';
 
 
 module.exports = function (grunt) {
