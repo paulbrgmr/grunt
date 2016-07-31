@@ -59,20 +59,6 @@ module.exports = function(grunt) {
                 watchTask: true
             }
         },
-        // imagemin: {
-        //     static: {
-        //         options: {
-        //             optimizationLevel: 3,
-        //             svgoPlugins: [{ removeViewBox: false }],
-        //             // use: [mozjpeg()]
-        //         },
-        //         files: {
-        //             '_resources/img/min/*.png': '_resources/img/*.png', // 'destination': 'source'
-        //             '_resources/img/min/*.jpg': '_resources/img/*.jpg',
-        //             '_resources/img/min/*.gif': '_resources/img/*.gif'
-        //         }
-        //     }
-        // },
         notify: {
             sass: {
                 options: {
@@ -112,7 +98,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-mkdir');
     grunt.loadNpmTasks('grunt-browser-sync');
-    // grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.registerTask('init', ['mkdir']);
     grunt.registerTask('default', ['sass', 'jshint', 'uglify', 'browserSync', 'watch']);
 };
