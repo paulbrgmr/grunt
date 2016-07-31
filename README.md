@@ -5,12 +5,12 @@ npm install
 
 Execute grunt (the first time)
 ```
-grunt
+grunt init
 ```
 
 Execute grunt watcher
 ```
-grunt watch
+grunt
 ```
 
 Quick clone
