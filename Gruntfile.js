@@ -51,6 +51,14 @@ module.exports = function(grunt) {
                 }
             }
         },
+        browserSync: {
+            bsFiles: {
+                src : ['_resources/**/*.css', '_resources/**/*.js', '*.html', '*.php']
+            },
+            options: {
+                watchTask: true
+            }
+        },
         // imagemin: {
         //     static: {
         //         options: {
@@ -103,7 +111,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-mkdir');
+    grunt.loadNpmTasks('grunt-browser-sync');
     // grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.registerTask('init', ['mkdir']);
-    grunt.registerTask('default', ['sass', 'jshint', 'uglify', 'watch']);
+    grunt.registerTask('default', ['sass', 'jshint', 'uglify', 'browserSync', 'watch']);
 };
